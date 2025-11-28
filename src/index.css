@@ -1,0 +1,63 @@
+.contact-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  transition: box-shadow 0.2s;
+}
+
+.contact-card:hover {
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-card .contact-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.contact-card .contact-info {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-card .contact-info .contact-name {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.contact-card .contact-info .contact-email,
+.contact-card .contact-info .contact-phone {
+  font-size: 14px;
+  color: #555;
+}
+
+.contact-card .contact-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.contact-card .contact-actions button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-card .contact-actions .edit-btn {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.contact-card .contact-actions .delete-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
