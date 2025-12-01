@@ -10,7 +10,7 @@ export default function EditContact() {
     const { store, dispatch } = useGlobalReducer();
 
     const contact = store.contacts.find(c => c.id === parseInt(theId));
-    const [form, setForm] = useState({ name: "", phone: "", email: "" });
+    const [form, setForm] = useState({ name: "", phone: "", email: "", address: "" });
 
     useEffect(() => {
         if (contact) setForm(contact);
